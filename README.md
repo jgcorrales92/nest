@@ -83,3 +83,43 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Publisher Manager App
+
+## Esta aplicacion esta basada en el funcionamiento parcial de las publicaciones de la Revista RCI de la Universidad de las Ciencias Informaticas
+
+# Nest comand
+
+npm install -g @nestjs/cli
+nest new publishe_manager
+nest --help
+nest generate res
+
+
+# Database comand
+ 
+ npm run start:dev
+ 
+ npm install --save @nestjs/typeorm typeorm pg
+ 
+ npm install --save dotenv
+ 
+ npm install @nestjs/config --verbose
+ 
+ .\node_modules\.bin\typeorm -d .\src\config\typeorm.ts  migration:generate ./src/database/migrations/startup_entities
+ 
+ npm i --save class-validator class-transformer
+ 
+ .\node_modules\.bin\typeorm -d .\dist\config\typeorm.js  migration:generate ./src/database/migrations/user_posts_relation
+ 
+ npm install --save @nestjs/passport passport passport-local
+
+.\node_modules\.bin\typeorm -d .\dist\config\typeorm.js  migration:run
+ 
+ npm install --save @nestjs/swagger
+ 
+ npm install bcrypt --verbose
+
+ nest g controller auth
+
+ npm install --save @nestjs/jwt passport-jwt
